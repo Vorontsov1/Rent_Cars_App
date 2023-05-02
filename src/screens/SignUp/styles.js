@@ -1,11 +1,10 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
+import {COLORS} from '../../assets/data/Colors';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: COLORS.primary,
   },
   imageBg: {
     width: '100%',
@@ -28,7 +27,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     width: '90%',
     height: 50,
-    borderBottomColor: 'lightgrey',
+    borderBottomColor: COLORS.yellow,
     borderBottomWidth: 1,
     paddingVertical: 15,
     marginHorizontal: 15,
@@ -44,12 +43,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   textBlue: {
-    color: '#1877F2',
+    color: COLORS.title,
   },
   button: {
     width: '90%',
     height: 50,
-    backgroundColor: '#1877F2',
+    backgroundColor: COLORS.yellow,
     borderRadius: 15,
     justifyContent: 'center',
     alignItems: 'center',
