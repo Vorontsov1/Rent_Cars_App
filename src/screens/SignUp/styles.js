@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   textBlue: {
-    color: COLORS.title,
+    color: COLORS.green,
   },
   button: {
     width: '90%',
