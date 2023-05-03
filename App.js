@@ -5,6 +5,9 @@ import Details from './src/screens/Details/Details';
 import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 import SignUp from './src/screens/SignUp/SignUp';
 import Login from './src/screens/Login/Login';
+import Google from './src/screens/Google/Google';
+
+
 
 
 
@@ -30,6 +33,7 @@ const App = () => {
           name="Login"
           component={Login}
         />
+        <Stack.Screen name="Google" component={Google} />
         <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
     </NavigationContainer>

@@ -84,7 +84,7 @@ const Login = ({navigation}) => {
             </TouchableOpacity>
           </View>
           <TouchableOpacity
-            onPress={() => navigation.navigate('HomeScreen')}
+            onPress={() => navigation.navigate('WelcomeScreen')}
             style={styles.button}>
             <Text style={{fontSize: 16, color: 'white', fontWeight: 'bold'}}>
               Login
@@ -94,7 +94,7 @@ const Login = ({navigation}) => {
             <Text style={styles.textOr}>Or</Text>
           </View>
           <TouchableOpacity
-            onPress={() => navigation.navigate('WelcomeScreen')}
+            onPress={() => navigation.navigate('Google')}
             style={styles.buttonGoogle}>
             <Image
               style={styles.iconGoogle}

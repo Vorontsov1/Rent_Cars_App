@@ -1,5 +1,5 @@
-import {StyleSheet} from 'react-native';
-import {COLORS} from '../../assets/data/Colors';
+import { StyleSheet } from "react-native";
+import { COLORS } from "../../assets/data/Colors";
 
 const styles = StyleSheet.create({
   container: {
@@ -9,8 +9,8 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.yellow,
   },
   text: {
-    fontSize: 60,
-    textAlign: 'center',
+      fontSize: 60,
+      textAlign: 'center',
     fontWeight: '300',
     color: COLORS.green,
 
