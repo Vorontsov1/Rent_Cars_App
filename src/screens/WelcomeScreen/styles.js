@@ -15,12 +15,11 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   text: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 30,
-    right: 55,
-    marginBottom: 50,
-    marginLeft: 30,
+  
+    // paddingHorizontal: 30,
+    // right: 55,
+    // marginBottom: 50,
+    // marginLeft: 30,
   },
   title: {
     fontSize: 33,
@@ -44,7 +43,7 @@ const styles = StyleSheet.create({
     width: '90%',
     height: 50,
     alignSelf: 'center',
-    margin: 10,
+    marginVertical: 30,
   },
   buttonText: {
     color: '#2C2B34',

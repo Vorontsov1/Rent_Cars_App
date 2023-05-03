@@ -5,4 +5,6 @@ export const COLORS = {
   black: '#000000',
   white: '#ffffff',
   yellow: '#ffb703',
+  lightgray: '#aaaaaa',
+  googleBtn: '#46494c',
 };

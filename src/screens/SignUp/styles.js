@@ -64,6 +64,9 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     marginHorizontal: -15,
   },
+  textBlue: {
+    color: COLORS.green,
+  },
   button: {
     width: '90%',
     height: 50,
