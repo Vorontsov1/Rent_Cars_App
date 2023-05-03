@@ -1,10 +1,14 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 import {COLORS} from '../../assets/data/Colors';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.primary,
+  },
+  iconBack: {
+    marginTop: 40,
+    marginLeft: 15,
   },
   imageBg: {
     width: '100%',
@@ -14,7 +18,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 30,
     fontWeight: 'bold',
-    color: 'black',
+    color: COLORS.gray,
     marginTop: 20,
     marginBottom: 10,
     paddingHorizontal: 15,
@@ -25,7 +29,7 @@ const styles = StyleSheet.create({
   textInput: {
     color: 'grey',
     marginTop: 20,
-    width: '90%',
+    width: '83%',
     height: 50,
     borderBottomColor: COLORS.yellow,
     borderBottomWidth: 1,
@@ -34,16 +38,31 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   textContainer: {
-    marginTop: 20,
+    marginTop: 0,
+    },
+    textContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 12,        
   },
   text: {
     fontSize: 15,
     color: 'grey',
-    marginVertical: 5,
-    paddingHorizontal: 15,
+      marginHorizontal: 15,
+    marginTop: 10,
   },
-  textBlue: {
+  textJoin: {
+    color: 'grey',
+      marginHorizontal: 15,
+    marginTop: 2,
+  },
+  textGreen: {
     color: COLORS.green,
+      fontSize: 15,
+      marginVertical: 10,
+    marginHorizontal: -15,
+    
   },
   button: {
     width: '90%',
@@ -52,13 +71,22 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 40,
+    marginTop: 80,
     marginHorizontal: 20,
   },
   textFooter: {
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 20,
+  },
+  iconWrap: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: 15,
+  },
+  icon: {
+    marginTop: 15,
+    paddingLeft: 5,
   },
 });
 
