@@ -56,12 +56,16 @@ const [change, setChange] = useState(false)
             />
           </View>
           <View style={styles.iconWrap}>
-            <Entypo style={styles.icon} name="lock" color="gray" size={20} />
+            <Entypo
+              style={styles.icon}
+              name="old-phone"
+              color="gray"
+              size={20}
+            />
             <TextInput
               style={styles.textInput}
-              placeholder="Password"
+              placeholder="Mobile"
               placeholderTextColor="gray"
-              secureTextEntry={true}
               onChange={() => setChange(true)}
             />
           </View>
@@ -81,18 +85,18 @@ const [change, setChange] = useState(false)
             </Text>
           </TouchableOpacity>
         </View>
-   
-          <View style={styles.textContainer}>
-            <Text style={styles.textJoin}>Joined us before? </Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-              <Text style={styles.textGreen}> Login</Text>
-            </TouchableOpacity>
-          </View>
+
+        <View style={styles.textContainer}>
+          <Text style={styles.textJoin}>Joined us before? </Text>
+          <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+            <Text style={styles.textGreen}> Login</Text>
+          </TouchableOpacity>
         </View>
-        <View>
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Login')}></TouchableOpacity>
-        </View>
+      </View>
+      <View>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Login')}></TouchableOpacity>
+      </View>
     </>
   );
 };

@@ -37,9 +37,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 15,
     marginVertical: 5,
   },
-  textContainer: {
-    marginTop: 0,
-    },
     textContainer: {
         flexDirection: 'row',
         alignItems: 'center',
