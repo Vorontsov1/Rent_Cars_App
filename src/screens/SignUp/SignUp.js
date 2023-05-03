@@ -4,6 +4,7 @@ import styles from './styles';
 import Entypo from 'react-native-vector-icons/Entypo';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { COLORS } from '../../assets/data/Colors';
 
 
 const SignUp = ({navigation}) => {
@@ -77,7 +78,7 @@ const initialstate = {
               style={styles.textInput}
               placeholder="Mobile"
               placeholderTextColor="gray"
-              keyboardType='numbers-and-punctuation'
+              keyboardType="numbers-and-punctuation"
               onChangeText={value =>
                 setState(prevState => ({
                   ...prevState,
@@ -86,14 +87,28 @@ const initialstate = {
               }
             />
           </View>
-
           <View style={styles.textContainer}>
-            <Text style={styles.text}>
+            <Text style={styles.textTncPrivacy}>
               By signing up, you agree to our{' '}
-              <Text style={styles.textBlue}>Terms & Conditions</Text> and{' '}
-              <Text style={styles.textBlue}>Privacy Policy</Text>
+              <TouchableOpacity>
+                <Text
+                  style={styles.textTerm}>
+                  {' '}
+                  Terms & Conditions{' '}
+                </Text>
+              </TouchableOpacity>
+              <View>
+                <Text style={styles.textTncPrivacyAnd}>and </Text>
+              </View>
+              <TouchableOpacity>
+                <Text
+                  style={{color: COLORS.green, fontFamily: 'RobotoMono-Bold'}}>
+                  Privacy Policy
+                </Text>
+              </TouchableOpacity>
             </Text>
           </View>
+
           <TouchableOpacity
             onPress={() => navigation.navigate('HomeScreen')}
             style={styles.button}>

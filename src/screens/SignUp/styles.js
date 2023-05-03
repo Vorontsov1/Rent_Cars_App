@@ -43,6 +43,25 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 12,
   },
+  textTncPrivacy: {
+    fontSize: 14,
+    color: 'grey',
+    marginTop: 20,
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily: 'RobotoMono-Bold',
+  },
+  textTerm: {
+    color: COLORS.green,
+    fontFamily: 'RobotoMono-Bold',
+  },
+  textTncPrivacyAnd: {
+    fontSize: 14,
+    color: 'grey',
+    marginTop: 9,
+    fontFamily: 'RobotoMono-Bold',
+  },
   text: {
     fontSize: 15,
     color: 'grey',
@@ -66,6 +85,10 @@ const styles = StyleSheet.create({
   },
   textBlue: {
     color: COLORS.green,
+  },
+  textPrivacy: {
+    color: COLORS.green,
+    fontFamily: 'RobotoMono-Bold',
   },
   button: {
     width: '90%',

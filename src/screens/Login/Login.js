@@ -20,6 +20,7 @@ const Login = ({navigation}) => {
     mobile: '',
   };
   const [state, setState] = useState(initialstate);
+  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <>
@@ -57,7 +58,7 @@ const Login = ({navigation}) => {
             <TextInput
               style={styles.textInput}
               placeholder="Password"
-              secureTextEntry={true}
+              secureTextEntry={!showPassword}
               placeholderTextColor="gray"
               keyboardType="numbers-and-punctuation"
               onChangeText={value =>
@@ -67,10 +68,20 @@ const Login = ({navigation}) => {
                 }))
               }
             />
+            <TouchableOpacity onPress={() => setShowPassword(!showPassword)}>
+              <Entypo
+                style={styles.iconEye}
+                name={showPassword ? 'eye' : 'eye-with-line'}
+                color={showPassword ? 'red' : 'gray'}
+                size={20}
+              />
+            </TouchableOpacity>
           </View>
 
           <View style={styles.textContainer}>
-            <Text style={styles.text}>Forgot Password?</Text>
+            <TouchableOpacity>
+              <Text style={styles.text}>Forgot Password?</Text>
+            </TouchableOpacity>
           </View>
           <TouchableOpacity
             onPress={() => navigation.navigate('HomeScreen')}
@@ -93,7 +104,7 @@ const Login = ({navigation}) => {
             <Text
               style={{
                 fontSize: 14,
-                color: '#46494c',
+                color: 'black',
                 fontFamily: 'RobotoMono-ExtraLight',
               }}>
               Login with Google

@@ -14,6 +14,10 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 150,
     resizeMode: 'cover',
+    },
+    iconEye: {
+        marginTop: 15,
+        marginRigth: 10,
   },
   title: {
     fontSize: 30,
@@ -30,7 +34,7 @@ const styles = StyleSheet.create({
   textInput: {
     color: 'grey',
     marginTop: 15,
-    width: '83%',
+    width: '80%',
     height: 50,
     borderBottomColor: COLORS.yellow,
     borderBottomWidth: 1,
