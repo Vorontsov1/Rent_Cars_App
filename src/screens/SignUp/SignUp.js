@@ -7,7 +7,12 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
 const SignUp = ({navigation}) => {
-const [change, setChange] = useState(false)
+const initialstate = {
+  email: '',
+  fullname: '',
+  mobile: '',
+};
+  const [state, setState] = useState(initialstate);
 
 
 
@@ -34,11 +39,12 @@ const [change, setChange] = useState(false)
               style={styles.textInput}
               placeholder="Email"
               placeholderTextColor="gray"
-              onChange={() => setChange(true)}
-              keyboardType="email-address"
-              autoCapitalize="none"
-              autoCorrect={false}
-              autoCompleteType="email"
+              onChangeText={value =>
+                setState(prevState => ({
+                  ...prevState,
+                  email: value,
+                }))
+              }
             />
           </View>
           <View style={styles.iconWrap}>
@@ -52,7 +58,12 @@ const [change, setChange] = useState(false)
               style={styles.textInput}
               placeholder="Full name"
               placeholderTextColor="gray"
-              onChange={() => setChange(true)}
+              onChangeText={value =>
+                setState(prevState => ({
+                  ...prevState,
+                  fullname: value,
+                }))
+              }
             />
           </View>
           <View style={styles.iconWrap}>
@@ -66,7 +77,13 @@ const [change, setChange] = useState(false)
               style={styles.textInput}
               placeholder="Mobile"
               placeholderTextColor="gray"
-              onChange={() => setChange(true)}
+              keyboardType='numbers-and-punctuation'
+              onChangeText={value =>
+                setState(prevState => ({
+                  ...prevState,
+                  mobile: value,
+                }))
+              }
             />
           </View>
 

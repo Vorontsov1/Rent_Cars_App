@@ -4,8 +4,8 @@ import styles from './styles';
 
 const Login = () => {
   return (
-    <View>
-      <Text></Text>
+    <View style={styles.container}>
+      <Text>Login</Text>
     </View>
   );
 };

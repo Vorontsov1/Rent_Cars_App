@@ -28,13 +28,12 @@ const styles = StyleSheet.create({
   },
   textInput: {
     color: 'grey',
-    marginTop: 20,
+    marginTop: 15,
     width: '83%',
     height: 50,
     borderBottomColor: COLORS.yellow,
     borderBottomWidth: 1,
-    paddingVertical: 15,
-    marginHorizontal: 15,
+    marginHorizontal: 8,
     marginVertical: 5,
   },
     textContainer: {
