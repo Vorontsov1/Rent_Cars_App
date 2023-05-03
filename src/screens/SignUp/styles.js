@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 30,
     fontWeight: 'bold',
+    fontFamily: 'RobotoMono-ExtraLight',
     color: COLORS.gray,
     marginTop: 20,
     marginBottom: 10,
@@ -36,29 +37,32 @@ const styles = StyleSheet.create({
     marginHorizontal: 8,
     marginVertical: 5,
   },
-    textContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 12,        
+  textContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 12,
   },
   text: {
     fontSize: 15,
     color: 'grey',
-      marginHorizontal: 15,
+    marginHorizontal: 20,
     marginTop: 10,
+    fontFamily: 'RobotoMono-Bold',
   },
+
   textJoin: {
     color: 'grey',
-      marginHorizontal: 15,
+    marginHorizontal: 15,
+    fontFamily: 'RobotoMono-Bold',
     marginTop: 2,
   },
   textGreen: {
     color: COLORS.green,
-      fontSize: 15,
-      marginVertical: 10,
+    fontFamily: 'RobotoMono-Bold',
+    fontSize: 15,
+    marginVertical: 10,
     marginHorizontal: -15,
-    
   },
   button: {
     width: '90%',

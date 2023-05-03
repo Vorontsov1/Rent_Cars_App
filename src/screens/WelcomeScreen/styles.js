@@ -7,13 +7,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#2C2B34',
-    },
-    image: {
-        width: 300,
-        right: 45,
-        aspectRatio: 3 / 4,
-        marginBottom: 20,
-    },
+  },
+  image: {
+    width: 300,
+    right: 45,
+    aspectRatio: 3 / 4,
+    marginBottom: 20,
+  },
   text: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -23,15 +23,17 @@ const styles = StyleSheet.create({
     marginLeft: 30,
   },
   title: {
-    fontSize: 35,
-    fontWeight: 'bold',
+    fontSize: 33,
+    fontFamily: 'RobotoMono-Bold',
     color: 'white',
     padding: 20,
   },
   subtitle: {
     fontSize: 15,
     fontWeight: '400',
+    fontFamily: 'RobotoMono-SemiBold',
     color: '#8E8E8E',
+    marginLeft: 24,
   },
   button: {
     backgroundColor: 'white',
@@ -47,7 +49,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#2C2B34',
     fontSize: 18,
-    fontWeight: 'bold',
+    fontFamily: 'RobotoMono-Bold',
   },
 });
 
